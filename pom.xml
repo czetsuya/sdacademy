@@ -15,11 +15,25 @@
   <description>Demo project for Spring Boot</description>
   <properties>
     <java.version>11</java.version>
+    <junit.version>5.6.2</junit.version>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>
@@ -53,7 +67,7 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
-      <version>5.6.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
