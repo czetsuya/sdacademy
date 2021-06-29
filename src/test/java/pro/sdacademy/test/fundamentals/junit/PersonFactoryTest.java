@@ -7,6 +7,8 @@ package pro.sdacademy.test.fundamentals.junit;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import org.junit.jupiter.api.Test;
 import pro.sdacademy.test.fundamentals.junit.Person;
@@ -40,7 +42,8 @@ class PersonFactoryTest {
     assertAll(
         () -> assertEquals(SURNAME, person.getLastName()),
         () -> assertEquals(FEMALE_NAME, person.getFirstName()),
-        () -> assertEquals(FEMALE_PREFIX, person.getPrefix())
+        () -> assertEquals(FEMALE_PREFIX, person.getPrefix()),
+        () -> assertNotNull(person)
     );
   }
 }

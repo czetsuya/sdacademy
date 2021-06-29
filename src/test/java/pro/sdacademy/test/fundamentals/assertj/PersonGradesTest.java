@@ -37,7 +37,11 @@ class PersonGradesTest {
 
     assertThat(grades)
         .hasSize(2)
-        .contains(gradeA, gradeB);
+        .contains(gradeA, gradeB)
+        .isNotNull()
+        .first()
+        .isEqualTo(gradeA)
+    ;
   }
 
   @Test

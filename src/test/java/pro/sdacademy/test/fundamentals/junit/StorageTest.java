@@ -9,8 +9,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pro.sdacademy.test.fundamentals.junit.Connection;
-import pro.sdacademy.test.fundamentals.junit.Storage;
 
 /**
  * @author Edward P. Legaspi | czetsuya@gmail.com
@@ -25,12 +23,14 @@ class StorageTest {
 
   @BeforeAll
   static void setUpTestCase() throws InterruptedException {
+    System.out.println("BeforeAll");
     connection = new Connection();
     connection.open();
   }
 
   @AfterAll
   static void tearDownTestCase() throws InterruptedException {
+    System.out.println("AfterAll");
     connection.close();
   }
 

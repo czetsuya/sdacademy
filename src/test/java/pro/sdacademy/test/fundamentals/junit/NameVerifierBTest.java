@@ -17,6 +17,7 @@ class NameVerifierBTest {
 
   @BeforeEach
   void setUp() {
+    System.out.println("Before each");
     nameVerifier = new NameVerifier();
   }
 
