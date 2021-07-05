@@ -2,11 +2,13 @@ package pro.sdacademy.designpatterns.creational.builder;
 
 import java.util.ArrayList;
 import java.util.List;
+import lombok.Data;
 
 /**
  * @author Edward P. Legaspi | czetsuya@gmail.com
  * @since
  */
+@Data
 public class Weapon {
 
   private String type;

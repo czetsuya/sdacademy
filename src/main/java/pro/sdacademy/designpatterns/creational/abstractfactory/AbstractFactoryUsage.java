@@ -10,10 +10,12 @@ public class AbstractFactoryUsage {
 
     for (CarType type : CarType.values()) {
       System.out.println("CarType " + type);
+
       CarFactory factory = new FactoryProvider().createFactory(type);
       Car combi = factory.createCombi();
       Car sedan = factory.createSedan();
       Car hatchBack = factory.createHatchback();
+
       System.out.println(combi);
       System.out.println(sedan);
       System.out.println(hatchBack);
